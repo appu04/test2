@@ -1,0 +1,13 @@
+Oracle Jdk 8 installation
+# sudo add-apt-repository ppa:webupd8team/java
+# sudo apt-get update
+# sudo apt-get install oracle-java8-installer
+Install Jenkins
+Add the repository key to the system.
+# wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add –
+Append the Debian package repository address to the server's sources.list
+# echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee
+/etc/apt/sources.list.d/jenkins.list
+# sudo apt-get update
+# sudo apt-get install Jenkins
+# sudo systemctl start jenkins
